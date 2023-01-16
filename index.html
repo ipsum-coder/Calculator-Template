@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Template</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <meta name="description" content="This Is A Website Template With A Calculator Inspired From Easy Tutorials">
+    <meta name="keywords" content="Calculator,Easy,Tutorials">
+</head>
+
+<body>
+    <h1>MR. Calculator</h1>
+    <p class="hidden"><marquee>This Website Is Currently Not Availiable For This Device . Please Upgrade To A Larger Screen Size For Seamless Experience .</marquee><br><br><br><br><br>Visit <a href="/">Our Portfolio</a> For Such Amazing Website</p>
+    <div class="calculator-container">
+        <div class="calculator">
+            <form id="calculator-form">
+                <div class="screen">
+                    <div class="display-screen">
+                        <input type="text" name="display" autocomplete="off">
+                    </div>
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = '' " class="btn-imp">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="btn-imp">
+                    <input type="button" value="." onclick="display.value += '.' " class="btn-imp">
+                    <input type="button" value="/" onclick="display.value += '/' " class="btn-imp">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' ">
+                    <input type="button" value="×" onclick="display.value += '*' " class="btn-imp">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="-" onclick="display.value += '-' " class="btn-imp">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' ">
+                    <input type="button" value="+" onclick="display.value += '+' " class="btn-imp">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00' ">
+                    <input type="button" value="0" onclick="display.value += '0' ">
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal-btn btn-imp">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

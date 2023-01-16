@@ -1,0 +1,48 @@
+@media (max-width: 399px)
+{
+    h1
+    {
+        display: none;
+    }
+}
+
+@media (max-height : 675px)
+{
+    h1
+    {
+        display: none;
+    }
+}
+
+@media (max-width : 378px)
+{
+    .calculator form#calculator-form input
+    {
+        width: 40px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .calculator form#calculator-form .display-screen
+    {
+        margin: 10px;
+    }
+
+    .calculator form#calculator-form input.equal-btn
+    {
+    width: 80px;
+    }
+}
+
+@media (max-width : 294px)
+{
+    p.hidden
+    {
+        display: block;
+        margin-top: 45vh;
+    }
+    .calculator-container
+    {
+        display: none;
+    }
+}
